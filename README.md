@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# SubasTodo App codebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application is designed for people who wants to sell items to the best price that the market can provide. The functionality is based on the idea that a person publishes his product to sell at an estimated price (this is not shown to the public) and then the market will give value to it until it reaches the proposed price or surpassing it, in a total of 7 days that the publication lasts, otherwise, the publisher can decide whether to sell the product or not.
 
-## Available Scripts
+### Install dependencies
 
-In the project directory, you can run:
+    npm install
 
-### `npm start`
+### Setup environment file
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+create a file at root called `.env` and add this:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    REACT_APP_API=<server url>
 
-### `npm test`
+### Run App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    npm start
 
-### `npm run build`
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Check Lint errors
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm run lint
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Fix Lint errors
 
-### `npm run eject`
+    npm run lint:fix
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Members
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+|                                                        Photo                                                        |       Name        |            Mail            |                          Github                          |
+| :-----------------------------------------------------------------------------------------------------------------: | :---------------: | :------------------------: | :------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/99558033?v=4" height="50" width="50" style="border-radius:50px">  | Luciano Stradiot  |   lstradiot15@gmail.com    |  [@LucianoStradiot](https://github.com/LucianoStradiot)  |
+| <img src="https://avatars.githubusercontent.com/u/87544394?v=4" height="50" width="50" style="border-radius:50px">  | Juan Cruz Tilatti |    jctilatti@gmail.com     |      [@JuanCruzTilatti](https://github.com/Tilajc)       |
+| <img src="https://avatars.githubusercontent.com/u/127610561?v=4" height="50" width="50" style="border-radius:50px"> |  Milagros Cerro   |  cerromilagros1@gmail.com  |      [@MilagrosCerro](https://github.com/Milicerro)      |
+| <img src="https://avatars.githubusercontent.com/u/79873702?v=4" height="50" width="50" style="border-radius:50px">  | Jazmin Presidente |   jazmin.presi@gmail.com   |   [@JazminPresidente](https://github.com/Jazmin-Presi)   |
+| <img src="https://avatars.githubusercontent.com/u/127455772?v=4" height="50" width="50" style="border-radius:50px"> | Victoria Negrotto |   vnegrotto19@gmail.com    | [@VictoriaNegrotto](https://github.com/VictoriaNegrotto) |
+| <img src="https://avatars.githubusercontent.com/u/101472952?v=4" height="50" width="50" style="border-radius:50px"> | Gabriela Hollmann | gabrielahollmann@gmail.com |     [@GabrielaHollmann](https://github.com/gabiholl)     |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+### License & Copyright
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© Devs&QA
