@@ -14,7 +14,7 @@
 
 .cancelBtn:hover {
   background-color: rgb(130, 19, 19);
-  color: aliceblue;
+  color: #fff;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -26,7 +26,7 @@
 
 .submitBtn:hover {
   background-color: #9b411a;
-  color: aliceblue;
+  color: #fff;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -42,6 +42,18 @@
 .xBtn:hover {
   border-radius: 5px;
   transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in;
+  cursor: pointer;
+}
+
+.editBtn {
+  background-color: #22304a;
+  color: #fff;
+}
+
+.editBtn:hover {
+  background-color: #374e77;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
