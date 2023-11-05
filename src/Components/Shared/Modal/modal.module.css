@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #00000096;
+}
+
+.subContainer {
+  position: fixed;
+  padding: 20px;
+  margin: 0 20px;
+  top: 300px;
+  box-shadow: 3px 3px 10px;
+  border-radius: 10px;
+  background-color: #f0876a;
+}
+
+.title {
+  margin: 10px 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.subTitle {
+  margin: 10px 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
