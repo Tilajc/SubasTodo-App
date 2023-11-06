@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './modal.module.css';
 import Button from '../Button';
 
-/**This component is used by passing the properties of title for the title, desc for the description, isOpen to open the modal, confirmBtn for the confirm or accept button, denyBtn for the cancel or exit button, clickFunction, which is what suits it to indicate to the confirm button the action you want to perform and chooseModal to determine whether to use a modal that requires a confirmation or a modal that shows a text that disappears after 5 seconds */
+/**This component is used by passing the properties of title for the title, description for the description, isOpen to open the modal, confirmBtn for the confirm or accept button, denyBtn for the cancel or exit button, onClick which is what suits it to indicate to the confirm button the action you want to perform and chooseModal to determine whether to use a modal that requires a confirmation or a modal that shows a text that disappears after 5 seconds */
 
 const Modal = ({
   title,
@@ -24,7 +24,7 @@ const Modal = ({
         setTimeout(() => {
           close();
         }, 500);
-      }, 5000);
+      }, 4000);
     }
     setIsFadingOut(true);
 
@@ -42,8 +42,15 @@ const Modal = ({
           </div>
           <div className={styles.title}>{title.toUpperCase()}</div>
           <div className={styles.subTitle}>{description}</div>
-          <Button type="submit" text={confirmBtn} onClick={onClick} />
-          <Button type="cancel" text={denyBtn} onClick={close} />
+          <div className={styles.btnsContainer}>
+            <Button
+              className={styles.chooseBtns}
+              type="submit"
+              text={confirmBtn}
+              onClick={onClick}
+            />
+            <Button className={styles.chooseBtns} type="cancel" text={denyBtn} onClick={close} />
+          </div>
         </div>
       </div>
     ) : (

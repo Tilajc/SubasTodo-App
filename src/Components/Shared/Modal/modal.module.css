@@ -75,7 +75,7 @@
   box-shadow: 3px 3px 10px;
   border-radius: 10px;
   background: linear-gradient(to bottom, #f0876a, #fff);
-  animation: slideInFromBottom 0.5s ease-in forwards;
+  animation: fadeInSelfClose 0.5s ease-in forwards;
 }
 
 .subContainerSelfClose {
@@ -86,7 +86,7 @@
   box-shadow: 3px 3px 10px;
   border-radius: 10px;
   background: linear-gradient(to bottom, #f0876a, #fff);
-  animation: fadeOut 0.5s ease-in forwards;
+  animation: fadeOutSelfClose 0.5s ease-in forwards;
 }
 
 .descriptionSelfClose {
@@ -94,7 +94,13 @@
   font-weight: 500;
 }
 
-@keyframes slideInFromBottom {
+.btnsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+@keyframes fadeInSelfClose {
   0% {
     opacity: 0;
     transform: translateY(0);
@@ -105,7 +111,7 @@
   }
 }
 
-@keyframes fadeOut {
+@keyframes fadeOutSelfClose {
   0% {
     opacity: 1;
     transform: translateY(-40px);
