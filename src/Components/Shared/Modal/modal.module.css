@@ -9,6 +9,8 @@
   bottom: 0;
   z-index: 999;
   background-color: #00000096;
+  opacity: 1;
+  animation: modalAppear 0.2s ease-in;
 }
 
 .subContainer {
@@ -89,5 +91,14 @@
   100% {
     opacity: 1;
     transform: translateY(-40px);
+  }
+}
+
+@keyframes modalAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
