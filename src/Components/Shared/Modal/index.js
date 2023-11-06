@@ -43,13 +43,8 @@ const Modal = ({
           <div className={styles.title}>{title.toUpperCase()}</div>
           <div className={styles.subTitle}>{description}</div>
           <div className={styles.btnsContainer}>
-            <Button
-              className={styles.chooseBtns}
-              type="submit"
-              text={confirmBtn}
-              onClick={onClick}
-            />
-            <Button className={styles.chooseBtns} type="cancel" text={denyBtn} onClick={close} />
+            <Button type="cancel" text={denyBtn} onClick={close} />
+            <Button type="submit" text={confirmBtn} onClick={onClick} />
           </div>
         </div>
       </div>
