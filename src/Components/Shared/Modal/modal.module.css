@@ -67,6 +67,17 @@
   z-index: 999;
 }
 
+.subContainerOpen {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 15px;
+  margin: 0 20px;
+  box-shadow: 3px 3px 10px;
+  border-radius: 10px;
+  background-color: #f0876a;
+  animation: slideInFromBottom 0.5s ease-in forwards;
+}
+
 .subContainerSelfClose {
   display: flex;
   justify-content: space-evenly;
@@ -75,8 +86,7 @@
   box-shadow: 3px 3px 10px;
   border-radius: 10px;
   background-color: #f0876a;
-  opacity: 0;
-  animation: slideInFromBottom 0.5s ease-in forwards;
+  animation: fadeOut 0.5s ease-in forwards;
 }
 
 .descSelfClose {
@@ -94,11 +104,13 @@
   }
 }
 
-@keyframes modalAppear {
+@keyframes fadeOut {
   0% {
-    opacity: 0;
+    opacity: 1;
+    transform: translateY(-40px);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    transform: translateY(0);
   }
 }
