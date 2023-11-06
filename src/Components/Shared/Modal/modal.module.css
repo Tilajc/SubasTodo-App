@@ -74,7 +74,7 @@
   margin: 0 20px;
   box-shadow: 3px 3px 10px;
   border-radius: 10px;
-  background-color: #f0876a;
+  background: linear-gradient(to bottom, #f0876a, #fff);
   animation: slideInFromBottom 0.5s ease-in forwards;
 }
 
@@ -85,12 +85,13 @@
   margin: 0 20px;
   box-shadow: 3px 3px 10px;
   border-radius: 10px;
-  background-color: #f0876a;
+  background: linear-gradient(to bottom, #f0876a, #fff);
   animation: fadeOut 0.5s ease-in forwards;
 }
 
-.descSelfClose {
-  margin-right: 10px;
+.descriptionSelfClose {
+  margin-right: 5px;
+  font-weight: 500;
 }
 
 @keyframes slideInFromBottom {
@@ -112,5 +113,14 @@
   100% {
     opacity: 0;
     transform: translateY(0);
+  }
+}
+
+@keyframes modalAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
