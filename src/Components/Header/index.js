@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import styles from './header.module.css';
 
 const Header = () => {
+  const pepito = 'Hola Mundo';
   return (
     <div>
-      <Link to="/">Header</Link>
+      <header className={styles.header}>{pepito}</header>
+      <h1></h1>
     </div>
   );
 };
