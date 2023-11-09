@@ -1,16 +1,24 @@
+import { useNavigate } from 'react-router';
 import React from 'react';
 
 import styles from './header.module.css';
+import Button from '../Shared/Button';
 
 const Header = () => {
-  const pepito = 'SubasTodo';
+  const navigate = useNavigate();
+  //funcion para redirigir al login on click
+  const onSubmit = () => {
+    navigate('/login');
+  };
   return (
-    <div>
-      <header className={styles.header}>{pepito}</header>
-      <h1>SubasTodo</h1>
-      <img src="assets/logo.png" alt="" className={styles.header} />
-      <button></button>
-    </div>
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <img src="assets/logo.png" alt="logo" className={styles.img} />
+        <h1 className={styles.tittle}>SubasTodo</h1>
+      </div>
+      <Button type="submit" text="Log in" onClick={onSubmit} className={styles.sharedButton} />
+      <button className={styles.button}></button>
+    </header>
   );
 };
 

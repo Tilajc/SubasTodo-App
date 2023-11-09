@@ -1,1 +1,23 @@
+.header {
+  background: radial-gradient(circle at -10% -25%, #176696 20%, #fff 140%);
+}
 
+.tittle {
+  color: white;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  width: 70px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.sharedButton {
+  padding: 400px;
+}
