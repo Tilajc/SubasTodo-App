@@ -1,9 +1,14 @@
 import React from 'react';
 import styles from './button.module.css';
 
-const Button = ({ text, type, onClick }) => {
+const Button = ({ text, type, onClick, classBtn }) => {
   return type === 'submit' ? (
-    <button onClick={onClick} className={`${styles.submitBtn} ${styles.button}`}>
+    <button
+      onClick={onClick}
+      className={
+        classBtn ? `${styles.submitBtn} ${classBtn}` : `${styles.submitBtn} ${styles.button}`
+      }
+    >
       {text}
     </button>
   ) : (
@@ -11,9 +16,15 @@ const Button = ({ text, type, onClick }) => {
       onClick={onClick}
       className={
         type === 'cancel'
-          ? `${styles.cancelBtn} ${styles.button}`
+          ? classBtn
+            ? `${styles.cancelBtn} ${classBtn}`
+            : `${styles.cancelBtn} ${styles.button}`
           : type === 'x'
-          ? `${styles.xBtn}`
+          ? classBtn
+            ? `${classBtn}`
+            : `${styles.xBtn}`
+          : classBtn
+          ? `${styles.editBtn} ${classBtn}`
           : `${styles.editBtn} ${styles.button}`
       }
       type="button"
