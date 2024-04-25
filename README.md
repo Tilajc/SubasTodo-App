@@ -45,4 +45,4 @@ You will also see any lint errors in the console.
 
 ### License & Copyright
 
-© Devs&QA
+© Devs&QA Test
